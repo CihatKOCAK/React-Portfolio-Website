@@ -6,6 +6,7 @@
         background-color: chocolate;
         position: relative;
         top: 70px;
+        scroll-behavior: smooth; //for the change page and link effect
         scroll-snap-type: y mandatory;
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar{ 
