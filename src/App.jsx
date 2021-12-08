@@ -12,10 +12,12 @@ import Menu from "./components/menu/Menu";
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState("en");
+  console.log(selectedLang)
   return (
     <div className="app">
       <Topbar menuOpen = {menuOpen} setMenuOpen = {setMenuOpen} />
-      <Menu menuOpen = {menuOpen} setMenuOpen = {setMenuOpen} />
+      <Menu menuOpen = {menuOpen} setMenuOpen = {setMenuOpen} selectedLang={selectedLang} setSelectedLang = {setSelectedLang}  />
       <div className="sections">
         <Intro />
         <Portfolio />
