@@ -1,22 +1,24 @@
 .app{
     height: 100vh;
+
     .sections{
         width: 100%;
-        height: calc(100vh - 70px); //vh -> % value
-        background-color: chocolate;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
         position: relative;
         top: 70px;
-        scroll-behavior: smooth; //for the change page and link effect
+        overflow-y: scroll;
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none; //for firefox
-        &::-webkit-scrollbar{ 
+        &::-webkit-scrollbar{
             display: none;
         }
 
         > *{
             width: 100vw;
             height: calc(100vh - 70px);
-            scroll-snap-align:start ;
+            scroll-snap-align: start;
         }
     }
 }
