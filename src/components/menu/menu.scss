@@ -47,6 +47,8 @@
     position: absolute;
     bottom: 10px;
     cursor: pointer;
+    
+    transition: all 1s ease;
 
     &.tr {
       .lang-tr {
