@@ -1,3 +1,28 @@
+export const portfolioCategory = [
+  {
+      id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "web",
+      title: "Web App",
+    },
+    {
+      id: "mobile",
+      title: "Mobile App",
+    },
+    {
+      id: "design",
+      title: "Design",
+    },
+    {
+      id: "branding",
+      title: "Branding",
+    },
+   
+];
+
+
 export const featuredPortfolio = [
     {
       id: 1,
