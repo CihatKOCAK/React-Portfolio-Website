@@ -2,14 +2,20 @@ import './popup.scss'
 
 
 export default function Popup(props) {
-    return (props.trigger) ? (
-        <div className="popup-overlay active">
+
+    const clear = () => {
+        props.setTrigger(false);
+        console.log(props);
+    }
+    return (
+        <div className={"popup-overlay " + (props.trigger ? "active" : "unactive")} onClick={() => props.setTrigger(false)} >
             <div className="popup">
-                <a className="close" href="#" onClick={() => props.setTrigger(false)}>&times;</a>
+                <a className="close" href="#" onClick={() => clear() }>&times;</a>
                 <div className="content">
                     {props.children}
                 </div>
             </div>
         </div>
-    ) : "";
+    )
+
 }

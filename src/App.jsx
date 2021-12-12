@@ -11,34 +11,29 @@ import Popup from "./components/popup/Popup";
 
 
 function App() {
-
+  const [timedPopup, setTimedPopup] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState("en");
 
   useEffect(() => {
     setTimeout(() => {
       setTimedPopup(true);
-    }, 0);
+      console.log(timedPopup)
+    }, 2000);
   }, []);
 
-  const [timedPopup, setTimedPopup] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState("en");
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} selectedLang={selectedLang} setSelectedLang={setSelectedLang} />
-      <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
-        <h3>My popup</h3>
-        <p>This is my button triggered popup</p>
-        <p>This is my button triggered popup</p>
-        <p>This is my button triggered popup</p>
-        <p>This is my button triggered popup</p>
-        <p>This is my button triggered popup</p>
-        <p>This is my button triggered popup</p>
-        <p>This is my button triggered popup</p>
-      </Popup>
       <div className="sections">
+      <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
+        <h2>Hi There!</h2>
+        <h3>this is my personal portfolio</h3>
+        <p>have fun getting to know me! </p>
+        </Popup>
         <Intro />
-        <Portfolio />
+        <Portfolio trigger={timedPopup} setTrigger={setTimedPopup} />
         <Works />
         <Testimonials />
         <Contact />
