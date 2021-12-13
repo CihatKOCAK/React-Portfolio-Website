@@ -7,7 +7,7 @@ import PortfolioItem from './portfolioItem/PortfolioItem';
 export default function Portfolio() {
     const [selected, setSelected] = useState("featured");
     const [data, setData] = useState([]);
-    const [activited, setActivited] = useState(false)
+    
 
 
     useEffect(() => {
@@ -48,7 +48,7 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 {data.map((d, index) => (
-                    <PortfolioItem d={d} key = {index} activited = {activited} setActivited = {setActivited} />
+                    <PortfolioItem d={d} key = {index}  />
                 ))} </div>
         </div>
     )
