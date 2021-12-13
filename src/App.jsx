@@ -27,13 +27,13 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} selectedLang={selectedLang} setSelectedLang={setSelectedLang} />
       <div className="sections">
-      <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
+      <Popup key={"timedPopup"} trigger={timedPopup} setTrigger={setTimedPopup}>
         <h2>Hi There!</h2>
         <h3>this is my personal portfolio</h3>
         <p>have fun getting to know me! </p>
         </Popup>
         <Intro />
-        <Portfolio trigger={timedPopup} setTrigger={setTimedPopup} />
+        <Portfolio />
         <Works />
         <Testimonials />
         <Contact />

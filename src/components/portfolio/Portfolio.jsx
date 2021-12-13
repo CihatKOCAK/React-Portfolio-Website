@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import PortfolioList from '../portfolioList/PortfolioList';
+import PortfolioList from './portfolioList/PortfolioList';
 import './portfolio.scss'
 import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio, portfolioCategory } from "../../data"
+import PortfolioItem from './portfolioItem/PortfolioItem';
 
 export default function Portfolio({ trigger, setTrigger }) {
     const [selected, setSelected] = useState("featured");
@@ -34,7 +35,7 @@ export default function Portfolio({ trigger, setTrigger }) {
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <ul>
-                {portfolioCategory.map((item,index) => (
+                {portfolioCategory.map((item, index) => (
                     <PortfolioList
                         key={item.title + index}
                         title={item.title}
@@ -46,13 +47,7 @@ export default function Portfolio({ trigger, setTrigger }) {
             </ul>
             <div className="container">
                 {data.map((d, index) => (
-                    <>
-                        <div key={d.title + index} className="item" trigger={trigger} setTrigger={setTrigger} onClick={console.log("asd")/*its a problem*/}>
-                            <img src={d.img} alt="" />
-                            <h3>{d.title}</h3>
-                        </div>
-
-                    </>
+                    <PortfolioItem d={d} key = {index} setTrigger = {setTrigger} trigger = {trigger} />
                 ))} </div>
         </div>
     )
