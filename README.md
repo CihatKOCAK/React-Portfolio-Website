@@ -5,7 +5,7 @@ useful, nice and simple portfolio site, I continue to develop it
 
 #### Table of contents
 1. [Tech](#Tech)
-2. [Run Locally](#Run Locally)
+2. [Run Locally](#locally)
 3. [Features](#Features)
 3. [Screenshots](#Screenshots)
 
@@ -18,7 +18,7 @@ useful, nice and simple portfolio site, I continue to develop it
 <a href ="https://fonts.google.com/"> google fonts,</a>  <br>
 <a href ="https://www.npmjs.com/package/ityped"> ityped,</a>  <br>
 
-## Run Locally
+## Run Locally <a name="locally"></a>
 
 Clone the project
 
