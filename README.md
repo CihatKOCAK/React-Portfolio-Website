@@ -1,13 +1,13 @@
-
-# Portfolio Website with react
-
-useful, nice and simple portfolio site, I continue to develop it
-
 #### Table of contents
 1. [Tech](#Tech)
 2. [Run Locally](#locally)
 3. [Features](#Features)
 3. [Screenshots](#Screenshots)
+
+# Portfolio Website with react
+
+useful, nice and simple portfolio site, I continue to develop it
+
 
 # Tech
 
