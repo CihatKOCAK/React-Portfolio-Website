@@ -3,6 +3,12 @@
 
 useful, nice and simple portfolio site, I continue to develop it
 
+#### Table of contents
+1. [Tech](#Tech)
+2. [Run Locally](#Run Locally)
+3. [Features](#Features)
+3. [Screenshots](#Screenshots)
+
 # Tech
 
 <a href ="https://www.npmjs.com/package/node-sass"> csss,</a> <br> 
