@@ -29,13 +29,14 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd React-Portfolio-Website
 ```
 
 Install dependencies
 
 ```bash
   yarn
+  npm install
 ```
 
 Start the server
